@@ -223,6 +223,17 @@ Route::get('/teacher/class/view','TClassController@view'); // View Report
 Route::get('/teacher/class/pdf','TClassController@pdf'); // Download PDF
 Route::get('/teacher/class/excel','TClassController@excel'); // Download Excel
 
+// Teacher Page -- Log
+Route::get('/teacher/log','TLogController@index'); // List User
+Route::get('/teacher/log/create','TLogController@create'); // Form Create
+Route::post('/teacher/log/create','TLogController@store'); // Insert Data
+Route::get('/teacher/log/edit/{id}','TLogController@edit'); // Form Edit
+Route::post('/teacher/log/update/{id}','TLogController@update'); // Update Data
+Route::get('/teacher/log/delete/{id}','TLogController@destroy'); // Delete Data
+Route::get('/teacher/log/view','TLogController@view');     // View Report
+Route::get('/teacher/log/pdf','TLogController@pdf'); // Download PDF
+Route::get('/teacher/log/excel','TLogController@excel'); // Download Excel
+
 /* STUDENT CONTROLLER */
 // Student Page -- Dashboard
 Route::get('/student/dashboard','SDashboardController@index'); // List User
@@ -279,6 +290,17 @@ Route::get('/student/profile/view','SProfileController@view'); // View Report
 Route::get('/student/profile/pdf','SProfileController@pdf'); // Download PDF
 Route::get('/student/profile/excel','SProfileController@excel'); // Download Excel
 
+// Student Page -- Log
+Route::get('/student/log','SLogController@index'); // List User
+Route::get('/student/log/create','SLogController@create'); // Form Create
+Route::post('/student/log/create','SLogController@store'); // Insert Data
+Route::get('/student/log/edit/{id}','SLogController@edit'); // Form Edit
+Route::post('/student/log/update/{id}','SLogController@update'); // Update Data
+Route::get('/student/log/delete/{id}','SLogController@destroy'); // Delete Data
+Route::get('/student/log/view','SLogController@view');     // View Report
+Route::get('/student/log/pdf','SLogController@pdf'); // Download PDF
+Route::get('/student/log/excel','SLogController@excel'); // Download Excel
+
 /* PARENT CONTROLLER */
 // Parent Page -- Dashboard
 Route::get('/parent/dashboard','PDashboardController@index'); // List User
@@ -334,3 +356,14 @@ Route::get('/parent/profile/delete/{id}','PProfileController@destroy'); // Delet
 Route::get('/parent/profile/view','PProfileController@view'); // View Report
 Route::get('/parent/profile/pdf','PProfileController@pdf'); // Download PDF
 Route::get('/parent/profile/excel','PProfileController@excel'); // Download Excel
+
+// Parent Page -- Log
+Route::get('/parent/log','PLogController@index'); // List User
+Route::get('/parent/log/create','PLogController@create'); // Form Create
+Route::post('/parent/log/create','PLogController@store'); // Insert Data
+Route::get('/parent/log/edit/{id}','PLogController@edit'); // Form Edit
+Route::post('/parent/log/update/{id}','PLogController@update'); // Update Data
+Route::get('/parent/log/delete/{id}','PLogController@destroy'); // Delete Data
+Route::get('/parent/log/view','PLogController@view');     // View Report
+Route::get('/parent/log/pdf','PLogController@pdf'); // Download PDF
+Route::get('/parent/log/excel','PLogController@excel'); // Download Excel
