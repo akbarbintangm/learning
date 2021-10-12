@@ -14,7 +14,7 @@ class MPermissionController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/permission.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MPermissionController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/permission.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MPermissionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/permission.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MPermissionController extends Controller
      */
     public function show(MPermissionModel $mPermissionModel)
     {
-        //
+        return view('admin/permission.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MPermissionController extends Controller
      */
     public function edit(MPermissionModel $mPermissionModel)
     {
-        //
+        return view('admin/permission.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MPermissionController extends Controller
      */
     public function update(Request $request, MPermissionModel $mPermissionModel)
     {
-        //
+        return view('admin/permission.index');
     }
 
     /**
@@ -80,6 +80,20 @@ class MPermissionController extends Controller
      */
     public function destroy(MPermissionModel $mPermissionModel)
     {
-        //
+        return view('admin/permission.index');
+    }
+    public function pdf(MLogModel $mLogModel)
+    {
+        return view('admin/permission.pdf');
+    }
+
+    public function excel(MLogModel $mLogModel)
+    {
+        return view('admin/permission.excel');
+    }
+
+    public function report(MLogModel $mLogModel)
+    {
+        return view('admin/permission.report');
     }
 }

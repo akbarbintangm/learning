@@ -14,7 +14,7 @@ class MLogController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/log.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MLogController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/log.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MLogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/log.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MLogController extends Controller
      */
     public function show(MLogModel $mLogModel)
     {
-        //
+        return view('admin/log.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MLogController extends Controller
      */
     public function edit(MLogModel $mLogModel)
     {
-        //
+        return view('admin/log.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MLogController extends Controller
      */
     public function update(Request $request, MLogModel $mLogModel)
     {
-        //
+        return view('admin/log.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MLogController extends Controller
      */
     public function destroy(MLogModel $mLogModel)
     {
-        //
+        return view('admin/log.index');
+    }
+    
+    public function pdf(MLogModel $mLogModel)
+    {
+        return view('admin/log.pdf');
+    }
+    
+    public function excel(MLogModel $mLogModel)
+    {
+        return view('admin/log.excel');
+    }
+    
+    public function report(MLogModel $mLogModel)
+    {
+        return view('admin/log.report');
     }
 }

@@ -14,7 +14,7 @@ class MSchoolDashboardController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolDashboardController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolDashboardController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolDashboardController extends Controller
      */
     public function show(MSchoolDashboardModel $mSchoolDashboardModel)
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolDashboardController extends Controller
      */
     public function edit(MSchoolDashboardModel $mSchoolDashboardModel)
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolDashboardController extends Controller
      */
     public function update(Request $request, MSchoolDashboardModel $mSchoolDashboardModel)
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
     }
 
     /**
@@ -80,6 +80,20 @@ class MSchoolDashboardController extends Controller
      */
     public function destroy(MSchoolDashboardModel $mSchoolDashboardModel)
     {
-        //
+        return view('admin/school/detail/school_dashboard.index');
+    }
+    public function pdf(MSchoolDashboardModel $mSchoolDashboardModel)
+    {
+        return view('admin/school/detail/school_dashboard.pdf');
+    }
+
+    public function excel(MSchoolDashboardModel $mSchoolDashboardModel)
+    {
+        return view('admin/school/detail/school_dashboard.excel');
+    }
+
+    public function report(MSchoolDashboardModel $mSchoolDashboardModel)
+    {
+        return view('admin/school/detail/school_dashboard.report');
     }
 }

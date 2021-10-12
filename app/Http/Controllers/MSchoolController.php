@@ -14,7 +14,7 @@ class MSchoolController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolController extends Controller
      */
     public function show(MSchoolModel $mSchoolModel)
     {
-        //
+        return view('admin/school.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolController extends Controller
      */
     public function edit(MSchoolModel $mSchoolModel)
     {
-        //
+        return view('admin/school.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolController extends Controller
      */
     public function update(Request $request, MSchoolModel $mSchoolModel)
     {
-        //
+        return view('admin/school.index');
     }
 
     /**
@@ -80,6 +80,20 @@ class MSchoolController extends Controller
      */
     public function destroy(MSchoolModel $mSchoolModel)
     {
-        //
+        return view('admin/school.index');
+    }
+    public function pdf(MSchoolModel $mSchoolModel)
+    {
+        return view('admin/school.pdf');
+    }
+
+    public function excel(MSchoolModel $mSchoolModel)
+    {
+        return view('admin/school.excel');
+    }
+
+    public function report(MSchoolModel $mSchoolModel)
+    {
+        return view('admin/school.report');
     }
 }
