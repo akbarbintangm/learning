@@ -14,7 +14,12 @@ class SScoreController extends Controller
      */
     public function index()
     {
-        //
+        return view('student.score.index');
+    }
+
+    public function detail()
+    {
+        return view('student.score.detail');
     }
 
     /**

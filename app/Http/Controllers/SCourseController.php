@@ -17,6 +17,11 @@ class SCourseController extends Controller
         return view('student.course.index');
     }
 
+    public function detail()
+    {
+        return view('student.course.detail');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -257,6 +257,7 @@ Route::get('/student/dashboard/excel','App\Http\Controllers\SDashboardController
 Route::get('/student/course','App\Http\Controllers\SCourseController@index'); // List User
 Route::get('/student/course/create','App\Http\Controllers\SCourseController@create'); // Form Create
 Route::post('/student/course/create','App\Http\Controllers\SCourseController@store'); // Insert Data
+Route::get('/student/course/detail','App\Http\Controllers\SCourseController@detail'); // Form Edit
 Route::get('/student/course/edit','App\Http\Controllers\SCourseController@edit'); // Form Edit
 Route::post('/student/course/update','App\Http\Controllers\SCourseController@update'); // Update Data
 Route::get('/student/course/delete','App\Http\Controllers\SCourseController@destroy'); // Delete Data
@@ -267,6 +268,7 @@ Route::get('/student/course/excel','App\Http\Controllers\SCourseController@excel
 // Student Page -- Material Task
 Route::get('/student/material_task','App\Http\Controllers\SMaterialTaskController@index'); // List User
 Route::get('/student/material_task/create','App\Http\Controllers\SMaterialTaskController@create'); // Form Create
+Route::get('/student/material_task/detail','App\Http\Controllers\SMaterialTaskController@detail'); // Form Create
 Route::post('/student/material_task/create','App\Http\Controllers\SMaterialTaskController@store'); // Insert Data
 Route::get('/student/material_task/edit','App\Http\Controllers\SMaterialTaskController@edit'); // Form Edit
 Route::post('/student/material_task/update','App\Http\Controllers\SMaterialTaskController@update'); // Update Data
@@ -278,6 +280,7 @@ Route::get('/student/material_task/excel','App\Http\Controllers\SMaterialTaskCon
 // Student Page -- Score
 Route::get('/student/score','App\Http\Controllers\SScoreController@index'); // List User
 Route::get('/student/score/create','App\Http\Controllers\SScoreController@create'); // Form Create
+Route::get('/student/score/detail','App\Http\Controllers\SScoreController@detail'); // Form Create
 Route::post('/student/score/create','App\Http\Controllers\SScoreController@store'); // Insert Data
 Route::get('/student/score/edit','App\Http\Controllers\SScoreController@edit'); // Form Edit
 Route::post('/student/score/update','App\Http\Controllers\SScoreController@update'); // Update Data

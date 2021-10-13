@@ -32,6 +32,20 @@
     </li>
 
     <li class="nav-item mt-1 mb-1">
+        <a href="{{ url('/student/material_task') }}" class="nav-link bg-white">
+            <div class="row">
+                <div class="col-2">
+                    <i class="far fa-copy"></i>
+                </div>
+                <div class="col-10">
+                    <p class="text-center"><b>Tugas dan Materi</b></p></br>
+                    <p class="ml-">Materi dan tugas yang diberikan oleh guru</p>
+                </div>
+            </div>
+        </a>
+    </li>
+
+    <li class="nav-item mt-1 mb-1">
         <a href="{{ url('/student/course') }}" class="nav-link bg-purple">
             <div class="row">
                 <div class="col-2">
@@ -46,7 +60,7 @@
     </li>
 
     <li class="nav-item mt-1 mb-1">
-        <a href="{{ url('/admin/school') }}" class="nav-link bg-white">
+        <a href="{{ url('/student/score') }}" class="nav-link bg-white">
             <div class="row">
                 <div class="col-2">
                     <i class="far fa-chart-bar"></i>
@@ -60,7 +74,7 @@
     </li>
 
     <li class="nav-item mt-1 mb-1">
-        <a href="{{ url('/admin/school') }}" class="nav-link bg-white">
+        <a href="{{ url('/student/profile') }}" class="nav-link bg-white">
             <div class="row">
                 <div class="col-2">
                     <i class="fas fa-user"></i>
@@ -90,15 +104,22 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
+                            {{-- LIST MAPEL --}}
                             <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
 
+                                <div class="col-md-3 mt-2">
+                                    <a href="{{ url('/student/course/detail') }}">
+                                        <div class="card p-0">
+                                            <div class="card-body text-center pr-0 pl-0 ">
+                                                <img src="{{ asset('im/Frame-131.png') }}" alt="..."
+                                                    class="rounded">
+                                                <p class="mt-2">IPS</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
+                            {{-- END LIST MAPEL --}}
                         </div>
                         <!-- /.card-body -->
                     </div>

@@ -14,7 +14,7 @@ class SProfileController extends Controller
      */
     public function index()
     {
-        //
+        return view('student.profile.index');
     }
 
     /**

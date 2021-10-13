@@ -14,7 +14,12 @@ class SMaterialTaskController extends Controller
      */
     public function index()
     {
-        //
+        return view('student.material-task.index');
+    }
+
+    public function detail()
+    {
+        return view('student.material-task.detail');
     }
 
     /**

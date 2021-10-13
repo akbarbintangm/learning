@@ -1,12 +1,12 @@
 @extends('templates.template')
 
 @section('pageTitle')
-    Student - Dashboard
+    Student - Pelajaran
 @endsection
 
-{{-- @section('pageName')
-    Daftar Sekolah
-@endsection --}}
+@section('pageName')
+    Ilmu Pengetahuan Sosial ( IPS )
+@endsection
 
 @section('backgroundSidebar')
     bg-purple
@@ -18,7 +18,7 @@
 
 @section('pageMenuSidebar')
     <li class="nav-item mt-1 mb-1">
-        <a href="{{ url('/student') }}" class="nav-link bg-purple">
+        <a href="{{ url('/student') }}" class="nav-link bg-white">
             <div class="row">
                 <div class="col-2">
                     <i class="fas fa-tachometer-alt"></i>
@@ -46,7 +46,7 @@
     </li>
 
     <li class="nav-item mt-1 mb-1">
-        <a href="{{ url('/student/course') }}" class="nav-link bg-white">
+        <a href="{{ url('/student/course') }}" class="nav-link bg-purple">
             <div class="row">
                 <div class="col-2">
                     <i class="far fa-file-alt"></i>
@@ -101,67 +101,59 @@
     <div class="row">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <div class="alert alert-danger alert-dismissible">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                        <p><i class="icon fas fa-ban"></i>Danger alert preview. This alert is dismissable. A wonderful serenity
-                            has
-                            taken possession of my
-                            entire
-                            soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="tab-content p-0 table-responsive">
+                                <table id="table" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Tanggal</th>
+                                            <th>Pertemuan</th>
+                                            <th>Materi</th>
+                                            <th>Presensi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>18 Sept 2021</td>
+                                            <td>1</td>
+                                            <td>Pengenalan bersosialisasi</td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-block bg-gradient-success disabled">Hadir</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- /.card-body -->
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Detail</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Jadwal</b></h5>
+                            <p class="quote-secondary mb-0">Hari: Senin</p>
+                            <p class="quote-secondary">Jam : 08.00 - 09.00</p>
+                            <hr>
+                            <h5><b>Profil Guru</b></h5>
+                            <img class="profile-user-img img-fluid img-circle mt-2" src="{{ asset('im/Frame-131.png') }}"
+                                alt="User profile picture">
+                            <h5 class="mt-2"><b>Nama</b></h5>
+                            <p class="quote-secondary">William</p>
+
+                        </div>
+                        <!-- /.card-body -->
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-success">
-                        <div class="inner">
-                            <h3>4</h3>
-
-                            <p>Total Tugas</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-4 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-warning">
-                        <div class="inner">
-                            <h3>12<sup style="font-size: 20px">%</sup></h3>
-
-                            <p>Total Pelajaran</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-4 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-info">
-                        <div class="inner">
-                            <h3>44</h3>
-
-                            <p>Total Kehadiran</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
 
     </div>
     <!-- /.row (main row) -->
