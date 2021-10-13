@@ -19,72 +19,48 @@
 
 @section('pageMenuSidebar')
     <li class="nav-header">ADMIN MODE</li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school') }}" class="nav-link">
-        <i class="nav-icon fas fa-graduation-cap"></i>
-        <p>Daftar Sekolah</p>
+    <li class="nav-item p3 mt-1 mb-1">
+        <a href="{{ url('/admin/school') }}" class="nav-link bg-white rounded shadow">
+            <div class="row justify-content-center">
+                <div class="col-2 text-center align-self-center">
+                    <i class="nav-icon fas fa-graduation-cap text-white"></i>
+                </div>
+                <div class="col-10 align-self-center">
+                    <p class="font-weight-bold text-uppercase">Daftar Sekolah</p>
+                    <br>
+                    <p class="text-light font-weight-light">Daftar Sekolah yang sudah diinputkan</p>
+                </div>
+            </div>
         </a>
     </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/setting') }}" class="nav-link">
-        <i class="nav-icon fa fa-user-circle"></i>
-        <p>Pengaturan Akun</p>
+    <li class="nav-item p3 mt-1 mb-1">
+        <a href="{{ url('/admin/setting') }}" class="nav-link bg-purple rounded shadow">
+            <div class="row justify-content-center">
+                <div class="col-2 text-center align-self-center">
+                    <i class="nav-icon fas fa-user-circle text-white"></i>
+                </div>
+                <div class="col-10 align-self-center">
+                    <p class="font-weight-bold text-uppercase">Pengaturan Akun</p>
+                    <br>
+                    <p class="text-secondary font-weight-light">Akun Admin</p>
+                </div>
+            </div>
         </a>
     </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/login') }}" class="nav-link">
-        <i class="nav-icon fas fa-sign-out-alt"></i>
-        <p>Keluar</p>
+    <li class="nav-item p3 mt-1 mb-1">
+        <a href="{{ url('/login') }}" class="nav-link bg-white rounded shadow">
+            <div class="row justify-content-center">
+                <div class="col-2 text-center align-self-center">
+                    <i class="nav-icon fas fa-sign-out-alt text-danger"></i>
+                </div>
+                <div class="col-10 align-self-center">
+                    <p class="font-weight-bold text-uppercase text-danger">Keluar</p>
+                    <br>
+                    <p class="text-secondary font-weight-light">Sign Out untuk keluar sesi</p>
+                </div>
+            </div>
         </a>
     </li>
-    <li class="nav-header"><div class="dropdown-divider p2"></div></li>
-    <li class="nav-header text-light">
-        <p>NAMA SEKOLAH</p>
-        <h4 class="font-weight-bold">SDN 01 NEW YORK</h4>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_dashboard') }}" class="nav-link">
-        <i class="nav-icon fas fa-tachometer-alt"></i>
-        <p>Dashboard</p>
-        </a>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_info') }}" class="nav-link active">
-        <i class="nav-icon fas fa-pencil-alt"></i>
-        <p>Informasi Dasar</p>
-        </a>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_teacher') }}" class="nav-link">
-        <i class="nav-icon fas fa-user-friends"></i>
-        <p>Data Pengajar</p>
-        </a>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_student') }}" class="nav-link">
-        <i class="nav-icon fas fa-user-graduate"></i>
-        <p>Data Siswa</p>
-        </a>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_class') }}" class="nav-link">
-        <i class="nav-icon fas fa-graduation-cap"></i>
-        <p>Data Kelas</p>
-        </a>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_studies') }}" class="nav-link">
-        <i class="nav-icon fas fa-book"></i>
-        <p>Data Pelajaran</p>
-        </a>
-    </li>
-    <li class="nav-item p2">
-        <a href="{{ url('/admin/school/detail/school_schedule') }}" class="nav-link">
-        <i class="nav-icon fas fa-book-open"></i>
-        <p>Data Jadwal</p>
-        </a>
-    </li>
-    <li class="nav-header"><div class="dropdown-divider p3 mb-4"></div></li>
 @endsection
 
 @section('pageContent')
