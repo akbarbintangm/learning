@@ -14,7 +14,7 @@ class MSchoolInfoController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school/detail/school_info.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolInfoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school/detail/school_info.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolInfoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school/detail/school_info.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolInfoController extends Controller
      */
     public function show(MSchoolInfoModel $mSchoolInfoModel)
     {
-        //
+        return view('admin/school/detail/school_info.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolInfoController extends Controller
      */
     public function edit(MSchoolInfoModel $mSchoolInfoModel)
     {
-        //
+        return view('admin/school/detail/school_info.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolInfoController extends Controller
      */
     public function update(Request $request, MSchoolInfoModel $mSchoolInfoModel)
     {
-        //
+        return view('admin/school/detail/school_info.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MSchoolInfoController extends Controller
      */
     public function destroy(MSchoolInfoModel $mSchoolInfoModel)
     {
-        //
+        return view('admin/school/detail/school_info.index');
+    }
+
+    public function pdf(MSchoolInfoModel $mSchoolInfoModel)
+    {
+        return view('admin/school/detail/school_info.pdf');
+    }
+
+    public function excel(MSchoolInfoModel $mSchoolInfoModel)
+    {
+        return view('admin/school/detail/school_info.excel');
+    }
+
+    public function report(MSchoolInfoModel $mSchoolInfoModel)
+    {
+        return view('admin/school/detail/school_info.report');
     }
 }

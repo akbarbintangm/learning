@@ -14,7 +14,7 @@ class MSchoolStudentController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school/detail/school_student.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolStudentController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school/detail/school_student.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolStudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school/detail/school_student.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolStudentController extends Controller
      */
     public function show(MSchoolStudentModel $mSchoolStudentModel)
     {
-        //
+        return view('admin/school/detail/school_student.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolStudentController extends Controller
      */
     public function edit(MSchoolStudentModel $mSchoolStudentModel)
     {
-        //
+        return view('admin/school/detail/school_student.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolStudentController extends Controller
      */
     public function update(Request $request, MSchoolStudentModel $mSchoolStudentModel)
     {
-        //
+        return view('admin/school/detail/school_student.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MSchoolStudentController extends Controller
      */
     public function destroy(MSchoolStudentModel $mSchoolStudentModel)
     {
-        //
+        return view('admin/school/detail/school_student.index');
+    }
+
+    public function pdf(MSchoolStudentModel $mSchoolStudentModel)
+    {
+        return view('admin/school/detail/school_student.pdf');
+    }
+
+    public function excel(MSchoolStudentModel $mSchoolStudentModel)
+    {
+        return view('admin/school/detail/school_student.excel');
+    }
+
+    public function report(MSchoolStudentModel $mSchoolStudentModel)
+    {
+        return view('admin/school/detail/school_student.report');
     }
 }

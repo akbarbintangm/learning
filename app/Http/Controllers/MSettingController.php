@@ -14,7 +14,7 @@ class MSettingController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/setting.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSettingController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/setting.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSettingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/setting.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSettingController extends Controller
      */
     public function show(MSettingModel $mSettingModel)
     {
-        //
+        return view('admin/setting.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSettingController extends Controller
      */
     public function edit(MSettingModel $mSettingModel)
     {
-        //
+        return view('admin/setting.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSettingController extends Controller
      */
     public function update(Request $request, MSettingModel $mSettingModel)
     {
-        //
+        return view('admin/setting.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MSettingController extends Controller
      */
     public function destroy(MSettingModel $mSettingModel)
     {
-        //
+        return view('admin/setting.index');
+    }
+
+    public function pdf(MSettingModel $mSettingModel)
+    {
+        return view('admin/setting.pdf');
+    }
+
+    public function excel(MSettingModel $mSettingModel)
+    {
+        return view('admin/setting.excel');
+    }
+
+    public function report(MSettingModel $mSettingModel)
+    {
+        return view('admin/setting.report');
     }
 }

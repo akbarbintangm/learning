@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>@yield('pageTitle')</title>
+<title>Admin Login</title>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 <link rel="stylesheet" href="{{ asset('templates') }}/plugins/fontawesome-free/css/all.min.css">
@@ -31,64 +31,50 @@
     }
 </style>
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
+<body class="">
 
     <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__fadeIn" src="{{ asset('templates') }}/dist/img/logo.png" alt="AdminLTELogo" width="50%">
-    </div>
+    <!-- <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__fadeIn" src="{{ asset('templates') }}/dist/img/logo.png" alt="AdminLTELogo" height="60" width="60">
+    </div> -->
 
-    @include('templates.navbar')
-
-    @include('templates.sidebar')
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0 text-purple font-weight-bold">@yield('pageName')</h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{ url('/admin/school') }}" class="text-purple">Home</a></li>
-                        @yield('pageBreadcumb')
-                    </ol>
-                </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+<div class="container">
+    <form>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="row vh-100 text-center justify-content-center">
+            <div class="col-lg align-self-center">
+                <img class="img-fluid" src="{{ asset('templates') }}/dist/img/logo.png" alt="AdminLTELogo">
+            </div>
+            <div class="col-lg align-self-center p-5">
+                <h1 class="m-0 text-dark font-weight-bold text-left mb-4">Masuk</h1>
+                <div class="row">
+                    <div class="col-lg align-self-center">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="adminEmail" name="adminEmail" placeholder="Masukkan Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-lg align-self-center">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="adminPassword" name="adminPassword" placeholder="Masukkan Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-lg align-self-center text-left">
+                        <a href="#" class="text-purple">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-lg align-self-center text-right">
+                        <button type="submit" class="btn btn-purple bg-purple shadow-sm">Masuk</button>
+                    </div>
+                </div> 
+            </div>
         </div>
-        <!-- /.content-header -->
-
-        <!-- Main content -->
-        <section class="content">
-        <div class="container-fluid">
-            @yield('pageContent')
-        </div><!-- /.container-fluid -->
-        </section>
-        <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
-        <strong class="d-block d-sm-block d-md-block d-lg-none d-xl-none">Copyright &copy; 2021 <a href="{{ url('/') }}" class="text-purple">FlippClass</a>. All rights reserved.</strong>
-        <a href="#" class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-            <img src="{{ asset('templates') }}/dist/img/logo.png" alt="Logo" class="text-center img-fluid w-25">
-        </a>
-        <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 1.0
-        </div>
-    </footer>
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+    </form>
 </div>
-<!-- ./wrapper -->
 
 <script src="{{ asset('templates') }}/plugins/jquery/jquery.min.js"></script>
 <script src="{{ asset('templates') }}/plugins/jquery-ui/jquery-ui.min.js"></script>

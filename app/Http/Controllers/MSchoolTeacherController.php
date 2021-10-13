@@ -14,7 +14,7 @@ class MSchoolTeacherController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school/detail/school_teacher.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolTeacherController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school/detail/school_teacher.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolTeacherController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school/detail/school_teacher.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolTeacherController extends Controller
      */
     public function show(MSchoolTeacherModel $mSchoolTeacherModel)
     {
-        //
+        return view('admin/school/detail/school_teacher.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolTeacherController extends Controller
      */
     public function edit(MSchoolTeacherModel $mSchoolTeacherModel)
     {
-        //
+        return view('admin/school/detail/school_teacher.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolTeacherController extends Controller
      */
     public function update(Request $request, MSchoolTeacherModel $mSchoolTeacherModel)
     {
-        //
+        return view('admin/school/detail/school_teacher.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MSchoolTeacherController extends Controller
      */
     public function destroy(MSchoolTeacherModel $mSchoolTeacherModel)
     {
-        //
+        return view('admin/school/detail/school_teacher.index');
+    }
+
+    public function pdf(MSchoolTeacherModel $mSchoolTeacherModel)
+    {
+        return view('admin/school/detail/school_teacher.pdf');
+    }
+
+    public function excel(MSchoolTeacherModel $mSchoolTeacherModel)
+    {
+        return view('admin/school/detail/school_teacher.excel');
+    }
+
+    public function report(MSchoolTeacherModel $mSchoolTeacherModel)
+    {
+        return view('admin/school/detail/school_teacher.report');
     }
 }

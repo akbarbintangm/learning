@@ -14,7 +14,7 @@ class MSchoolStudiesController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school/detail/school_studies.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolStudiesController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school/detail/school_studies.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolStudiesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school/detail/school_studies.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolStudiesController extends Controller
      */
     public function show(MSchoolStudiesModel $mSchoolStudiesModel)
     {
-        //
+        return view('admin/school/detail/school_studies.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolStudiesController extends Controller
      */
     public function edit(MSchoolStudiesModel $mSchoolStudiesModel)
     {
-        //
+        return view('admin/school/detail/school_studies.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolStudiesController extends Controller
      */
     public function update(Request $request, MSchoolStudiesModel $mSchoolStudiesModel)
     {
-        //
+        return view('admin/school/detail/school_studies.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MSchoolStudiesController extends Controller
      */
     public function destroy(MSchoolStudiesModel $mSchoolStudiesModel)
     {
-        //
+        return view('admin/school/detail/school_studies.index');
+    }
+
+    public function pdf(MSchoolStudiesModel $mSchoolStudiesModel)
+    {
+        return view('admin/school/detail/school_studies.pdf');
+    }
+
+    public function excel(MSchoolStudiesModel $mSchoolStudiesModel)
+    {
+        return view('admin/school/detail/school_studies.excel');
+    }
+
+    public function report(MSchoolStudiesModel $mSchoolStudiesModel)
+    {
+        return view('admin/school/detail/school_studies.report');
     }
 }

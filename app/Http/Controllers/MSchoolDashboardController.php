@@ -82,6 +82,7 @@ class MSchoolDashboardController extends Controller
     {
         return view('admin/school/detail/school_dashboard.index');
     }
+    
     public function pdf(MSchoolDashboardModel $mSchoolDashboardModel)
     {
         return view('admin/school/detail/school_dashboard.pdf');

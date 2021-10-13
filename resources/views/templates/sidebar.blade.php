@@ -1,16 +1,16 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar main-sidebar-custom sidebar-dark-light @yield('backgroundSidebar') elevation-4">
+<aside class="main-sidebar main-sidebar-custom sidebar-light-light elevation-4" style="background-color: #E6DEE1 !important;">
     <!-- Brand Logo -->
     <div class="row p-3">
         <div class="col text-center">
             <a href="{{ url('/admin/school') }}">
-                <img src="{{ asset('templates') }}/dist/img/AdminLTELogo.png" alt="Logo" class="text-center img-fluid">
+                <img src="{{ asset('templates') }}/dist/img/logofix.png" alt="Logo" class="text-center img-fluid w-50 rounded-lg">
             </a>
         </div>
     </div>
     <!-- Sidebar -->
     <div class="sidebar">
-        <!-- Sidebar user panel (optional) 
+        <!-- Sidebar user panel (optional)
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
             <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
@@ -20,7 +20,7 @@
             </div>
         </div> -->
 
-        <!-- SidebarSearch Form 
+        <!-- SidebarSearch Form
         <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
             <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">

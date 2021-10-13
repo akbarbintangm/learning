@@ -1,16 +1,23 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background: url('{{ asset('templates') }}/dist/img/top.pngg') no-repeat fixed !important; background-position: center top;">
 	<!-- Left navbar links -->
-	<ul class="navbar-nav">
+	<ul class="navbar-nav mr-auto">
 		<li class="nav-item">
 			<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
 		</li>
-		<li class="nav-item d-none d-sm-inline-block">
+		<!-- <li class="nav-item d-none d-sm-inline-block">
 			<a href="index3.html" class="nav-link">Home</a>
 		</li>
 		<li class="nav-item d-none d-sm-inline-block">
 			<a href="#" class="nav-link">Contact</a>
+		</li> -->
+        <li class="nav-item d-none d-sm-inline-block">
+			<a href="#">
+                <img src="{{ asset('templates') }}/dist/img/logo.png" alt="Logo" class="text-center img-fluid w-50 mb-3">
+            </a>
 		</li>
+
+
 	</ul>
 
 	<!-- Right navbar links -->

@@ -14,7 +14,7 @@ class MSchoolScheduleController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin/school/detail/school_schedule.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MSchoolScheduleController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/school/detail/school_schedule.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class MSchoolScheduleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/school/detail/school_schedule.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class MSchoolScheduleController extends Controller
      */
     public function show(MSchoolScheduleModel $mSchoolScheduleModel)
     {
-        //
+        return view('admin/school/detail/school_schedule.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class MSchoolScheduleController extends Controller
      */
     public function edit(MSchoolScheduleModel $mSchoolScheduleModel)
     {
-        //
+        return view('admin/school/detail/school_schedule.edit');
     }
 
     /**
@@ -69,7 +69,7 @@ class MSchoolScheduleController extends Controller
      */
     public function update(Request $request, MSchoolScheduleModel $mSchoolScheduleModel)
     {
-        //
+        return view('admin/school/detail/school_schedule.index');
     }
 
     /**
@@ -80,6 +80,21 @@ class MSchoolScheduleController extends Controller
      */
     public function destroy(MSchoolScheduleModel $mSchoolScheduleModel)
     {
-        //
+        return view('admin/school/detail/school_schedule.index');
+    }
+
+    public function pdf(MSchoolScheduleModel $mSchoolScheduleModel)
+    {
+        return view('admin/school/detail/school_schedule.pdf');
+    }
+
+    public function excel(MSchoolScheduleModel $mSchoolScheduleModel)
+    {
+        return view('admin/school/detail/school_schedule.excel');
+    }
+
+    public function report(MSchoolScheduleModel $mSchoolScheduleModel)
+    {
+        return view('admin/school/detail/school_schedule.report');
     }
 }

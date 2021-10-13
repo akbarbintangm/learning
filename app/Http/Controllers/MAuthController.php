@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MSchoolModel;
+//use App\Models\MAuthModel;
 use Illuminate\Http\Request;
 
-class MSchoolController extends Controller
+class MAuthController extends Controller
 {
+    public function login()
+    {
+        return view('admin/login.index');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,7 @@ class MSchoolController extends Controller
      */
     public function index()
     {
-        return view('admin/school.index');
+        return view('admin/login.index');
     }
 
     /**
@@ -24,7 +28,7 @@ class MSchoolController extends Controller
      */
     public function create()
     {
-        return view('admin/school.create');
+        return view('admin/login.create');
     }
 
     /**
@@ -35,66 +39,66 @@ class MSchoolController extends Controller
      */
     public function store(Request $request)
     {
-        return view('admin/school.index');
+        return view('admin/login.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\MSchoolModel  $mSchoolModel
+     * @param  \App\Models\MAuthModel  $mAuthModel
      * @return \Illuminate\Http\Response
      */
-    public function show(MSchoolModel $mSchoolModel)
+    public function show(MAuthModel $mAuthModel)
     {
-        return view('admin/school.show');
+        return view('admin/login.show');
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\MSchoolModel  $mSchoolModel
+     * @param  \App\Models\MAuthModel  $mAuthModel
      * @return \Illuminate\Http\Response
      */
-    public function edit(MSchoolModel $mSchoolModel)
+    public function edit(MAuthModel $mAuthModel)
     {
-        return view('admin/school.edit');
+        return view('admin/login.edit');
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\MSchoolModel  $mSchoolModel
+     * @param  \App\Models\MAuthModel  $mAuthModel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, MSchoolModel $mSchoolModel)
+    public function update(Request $request, MAuthModel $mAuthModel)
     {
-        return view('admin/school.index');
+        return view('admin/login.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\MSchoolModel  $mSchoolModel
+     * @param  \App\Models\MAuthModel  $mAuthModel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MSchoolModel $mSchoolModel)
+    public function destroy(MAuthModel $mAuthModel)
     {
-        return view('admin/school.index');
+        return view('admin/login.index');
     }
-
-    public function pdf(MSchoolModel $mSchoolModel)
+    
+    public function pdf(MAuthModel $mAuthModel)
     {
-        return view('admin/school.pdf');
+        return view('admin/login.pdf');
     }
-
-    public function excel(MSchoolModel $mSchoolModel)
+    
+    public function excel(MAuthModel $mAuthModel)
     {
-        return view('admin/school.excel');
+        return view('admin/login.excel');
     }
-
-    public function report(MSchoolModel $mSchoolModel)
+    
+    public function report(MAuthModel $mAuthModel)
     {
-        return view('admin/school.report');
+        return view('admin/login.report');
     }
 }
