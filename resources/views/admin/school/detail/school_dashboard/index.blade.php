@@ -69,7 +69,7 @@
     <li class="nav-item p3 mt-1 mb-1">
         <a href="{{ url('/admin/school/detail/school_dashboard') }}" class="nav-link bg-purple rounded shadow">
             <div class="row justify-content-center">
-                <div class="col-2 text-center align-self-center">
+                <div class="col-2 text-left align-self-center">
                     <i class="nav-icon fas fa-tachometer-alt text-white"></i>
                 </div>
                 <div class="col-10 align-self-center">
