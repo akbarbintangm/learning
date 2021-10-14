@@ -199,11 +199,11 @@
                                 <td>Jajang Romi</td>
                                 <td>627273636367</td>
                                 <td>
-                                    <a href="{{ url('/admin/school/detail/school_teacher') }}" class="btn rounded bg-purple shadow-sm d-block">Detail Kelas</a>
+                                    <a href="{{ url('/admin/school/detail/school_teacher/show') }}" class="btn rounded bg-purple shadow-sm d-block">Detail Kelas</a>
                                 </td>
                                 <td>
-                                    <a href="{{ url('/admin/school/detail/school_teacher') }}" class="btn rounded btn-warning shadow-sm">Ubah</a>
-                                    <a href="{{ url('/admin/school/detail/school_teacher') }}" class="btn rounded btn-danger shadow-sm">Hapus</a>
+                                    <a href="{{ url('/admin/school/detail/school_teacher/edit') }}" class="btn rounded btn-warning shadow-sm">Ubah</a>
+                                    <a href="{{ url('/admin/school/detail/school_teacher/delete') }}" class="btn rounded btn-danger shadow-sm">Hapus</a>
                                 </td>
                             </tr>
                         </tbody>
